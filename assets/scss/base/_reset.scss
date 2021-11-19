@@ -1,0 +1,14 @@
+@use "../abstract/variable" as var;
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var.$font-primary;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,10 @@
+@use "../abstract/variable" as var;
+
+.font-ta {
+  font-family: var.$font-tamil;
+}
+
+.color-anim {
+  transition: 500ms;
+  animation: color-change 10s infinite;
+}
