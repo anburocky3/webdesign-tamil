@@ -896,8 +896,32 @@ a {
   color: gray;
 }
 
-.mt-5 {
-  margin-top: 5rem;
+.about-area {
+  padding: 8rem 20rem;
+  background-color: #3f43fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11rem;
+}
+.about-area--img {
+  width: 32rem;
+}
+.about-area--contents {
+  color: #fff;
+}
+.about-area--contents h2 {
+  font-size: 3rem;
+}
+.about-area--contents p {
+  line-height: 2;
+  color: #cfcfcf;
+}
+.about-area--contents p a {
+  color: #fff;
+}
+.about-area--contents p a:hover {
+  text-shadow: 10px 20px 30px black;
 }
 
 /*# sourceMappingURL=style.css.map */
