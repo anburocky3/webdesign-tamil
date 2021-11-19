@@ -9,13 +9,27 @@
   border: none;
   outline: none;
   display: inline-block;
+  cursor: pointer;
 
   &-primary {
+    @extend .btn;
     background-color: func.theme-colors();
     color: #fff;
 
     &:hover {
       background-color: func.theme-colors("primary-hover");
+    }
+  }
+
+  &-primary-outlined {
+    @extend .btn;
+    background-color: #fff;
+    border: 2px solid func.theme-colors();
+    color: func.theme-colors();
+
+    &:hover {
+      background-color: func.theme-colors();
+      color: #fff;
     }
   }
 }
