@@ -11,11 +11,19 @@ footer {
     @include mixins.responsive(xs) {
       font-size: 1.2rem;
     }
+
+    @include mixins.responsive(sm) {
+      font-size: 1.2rem;
+    }
   }
 
   p {
     color: #e8e8e8;
     @include mixins.responsive(xs) {
+      font-size: 0.9rem;
+    }
+
+    @include mixins.responsive(sm) {
       font-size: 0.9rem;
     }
   }

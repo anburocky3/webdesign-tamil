@@ -11,6 +11,15 @@
     flex-direction: column;
   }
 
+  @include mixins.responsive(sm) {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+
+  img {
+    width: 25rem;
+  }
+
   &--contents {
     max-width: 34rem;
   }
@@ -21,6 +30,10 @@
 
     @include mixins.responsive(xs) {
       font-size: 2rem;
+    }
+
+    @include mixins.responsive(sm) {
+      font-size: 1.5rem;
     }
 
     & > span {
@@ -35,6 +48,10 @@
     color: gray;
 
     @include mixins.responsive(xs) {
+      font-size: 0.9rem;
+    }
+
+    @include mixins.responsive(sm) {
       font-size: 0.9rem;
     }
   }

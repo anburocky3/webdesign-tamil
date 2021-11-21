@@ -114,6 +114,11 @@ a {
     padding: 1rem 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header h2 > span {
     font-size: 1rem;
@@ -128,6 +133,12 @@ a {
     font-size: 1.3rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .header .nav-toggler {
+    display: block;
+    font-size: 1.3rem;
+  }
+}
 .header--menu {
   display: flex;
   align-items: center;
@@ -135,6 +146,11 @@ a {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 576px) {
+  .header--menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) {
   .header--menu {
     display: none;
   }
@@ -184,6 +200,12 @@ a {
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 576px) {
+  .background-shapes .box2 {
+    top: 75%;
+    left: 75%;
+  }
+}
 .background-shapes .box3 {
   position: absolute;
   top: 30%;
@@ -221,6 +243,12 @@ a {
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 576px) {
+  .background-shapes .dot2 {
+    top: 22%;
+    left: 80%;
+  }
+}
 .background-shapes .dot3 {
   position: absolute;
   top: 90%;
@@ -254,6 +282,11 @@ a {
   color: #f4284a;
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 576px) {
+  .background-shapes .heart1 {
+    top: 40%;
+  }
+}
 .background-shapes .heart2 {
   font-size: 1.5rem;
   position: absolute;
@@ -274,6 +307,11 @@ a {
   z-index: -1;
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
+}
+@media only screen and (min-width: 576px) {
+  .background-shapes .circle1 {
+    top: 90%;
+  }
 }
 .background-shapes .circle2 {
   position: absolute;
@@ -299,10 +337,20 @@ footer {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  footer h2 {
+    font-size: 1.2rem;
+  }
+}
 footer p {
   color: #e8e8e8;
 }
 @media only screen and (max-width: 576px) {
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   footer p {
     font-size: 0.9rem;
   }
@@ -1005,6 +1053,15 @@ footer .legal {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 576px) {
+  .hero-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+}
+.hero-area img {
+  width: 25rem;
+}
 .hero-area--contents {
   max-width: 34rem;
 }
@@ -1017,6 +1074,11 @@ footer .legal {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .hero-area--title {
+    font-size: 1.5rem;
+  }
+}
 .hero-area--title > span {
   font-size: 1.5rem;
 }
@@ -1027,6 +1089,11 @@ footer .legal {
   color: gray;
 }
 @media only screen and (max-width: 576px) {
+  .hero-area--desc {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .hero-area--desc {
     font-size: 0.9rem;
   }
@@ -1047,13 +1114,30 @@ footer .legal {
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 .about-area--img {
   width: 32rem;
+}
+@media only screen and (min-width: 576px) {
+  .about-area--img {
+    width: 20rem;
+  }
 }
 .about-area--contents {
   color: #fff;
 }
 @media only screen and (max-width: 576px) {
+  .about-area--contents {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 576px) {
   .about-area--contents {
     margin: 0;
   }
@@ -1066,11 +1150,21 @@ footer .legal {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about-area--contents h2 {
+    font-size: 1.5rem;
+  }
+}
 .about-area--contents p {
   line-height: 2;
   color: #cfcfcf;
 }
 @media only screen and (max-width: 576px) {
+  .about-area--contents p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .about-area--contents p {
     font-size: 0.9rem;
   }
@@ -1086,6 +1180,11 @@ footer .legal {
   padding: 8rem 20rem;
 }
 @media only screen and (max-width: 576px) {
+  .roadmap {
+    padding: 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .roadmap {
     padding: 4rem 2rem;
   }
@@ -1106,6 +1205,11 @@ footer .legal {
   margin-top: 3rem;
 }
 @media only screen and (max-width: 576px) {
+  .roadmap--items {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) {
   .roadmap--items {
     flex-direction: column;
   }
@@ -1176,6 +1280,13 @@ footer .legal {
     left: 35%;
   }
 }
+@media only screen and (min-width: 576px) {
+  .roadmap--item:not(:last-child)::before {
+    content: "\f107";
+    top: 90%;
+    left: 40%;
+  }
+}
 .roadmap--item:hover:not(:last-child)::before {
   color: #3f43fd;
   right: -32%;
@@ -1198,6 +1309,12 @@ footer .legal {
     left: -20%;
   }
 }
+@media only screen and (min-width: 576px) {
+  .roadmap--item:hover:last-child::after {
+    top: 90%;
+    left: -20%;
+  }
+}
 .roadmap--item:hover h5 {
   color: #3f43fd;
 }
@@ -1214,6 +1331,11 @@ footer .legal {
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses {
+    padding: 4rem 2rem;
+  }
+}
 .courses--heading {
   text-align: center;
 }
@@ -1226,10 +1348,20 @@ footer .legal {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses--heading h2 {
+    font-size: 1.5rem;
+  }
+}
 .courses--heading p {
   color: #dfdfdf;
 }
 @media only screen and (max-width: 576px) {
+  .courses--heading p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .courses--heading p {
     font-size: 0.9rem;
   }
@@ -1241,6 +1373,12 @@ footer .legal {
 @media only screen and (max-width: 576px) {
   .courses-cards {
     flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .courses-cards {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .courses-card {
@@ -1298,6 +1436,11 @@ footer .legal {
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+}
 .contact-card {
   display: flex;
   justify-content: space-between;
@@ -1307,6 +1450,13 @@ footer .legal {
   border-radius: 0.5rem;
 }
 @media only screen and (max-width: 576px) {
+  .contact-card {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: initial;
+  }
+}
+@media only screen and (min-width: 576px) {
   .contact-card {
     flex-direction: column;
     padding: 2rem;
@@ -1324,10 +1474,20 @@ footer .legal {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .contact-card--contents h4 {
+    font-size: 1rem;
+  }
+}
 .contact-card--contents p {
   color: gray;
 }
 @media only screen and (max-width: 576px) {
+  .contact-card--contents p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .contact-card--contents p {
     font-size: 0.9rem;
   }

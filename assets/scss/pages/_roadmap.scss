@@ -9,6 +9,10 @@
     padding: 4rem 2rem;
   }
 
+  @include mixins.responsive(sm) {
+    padding: 4rem 2rem;
+  }
+
   &--heading {
     text-align: center;
 
@@ -28,6 +32,10 @@
     margin-top: 3rem;
 
     @include mixins.responsive(xs) {
+      flex-direction: column;
+    }
+
+    @include mixins.responsive(sm) {
       flex-direction: column;
     }
   }
@@ -103,6 +111,12 @@
         top: 90%;
         left: 35%;
       }
+
+      @include mixins.responsive(sm) {
+        content: "\f107";
+        top: 90%;
+        left: 40%;
+      }
     }
 
     &:hover:not(:last-child)::before {
@@ -123,6 +137,11 @@
       color: func.theme-colors();
 
       @include mixins.responsive(xs) {
+        top: 90%;
+        left: -20%;
+      }
+
+      @include mixins.responsive(sm) {
         top: 90%;
         left: -20%;
       }

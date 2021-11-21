@@ -31,6 +31,11 @@
     z-index: -1;
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      top: 75%;
+      left: 75%;
+    }
   }
 
   .box3 {
@@ -71,6 +76,11 @@
     z-index: -1;
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      top: 22%;
+      left: 80%;
+    }
   }
 
   .dot3 {
@@ -107,6 +117,10 @@
     z-index: -1;
     color: #f4284a;
     animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      top: 40%;
+    }
   }
 
   .heart2 {
@@ -130,6 +144,10 @@
     z-index: -1;
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      top: 90%;
+    }
   }
 
   .circle2 {
