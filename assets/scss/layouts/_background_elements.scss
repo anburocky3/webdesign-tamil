@@ -1,7 +1,7 @@
 @use "../abstract/mixins" as mixins;
 
 .background-shapes {
-  flex-basis: 100%;
+  // flex-basis: 100%;
 
   @include mixins.responsive(xs) {
     display: none;

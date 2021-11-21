@@ -34,6 +34,10 @@
     padding: 8rem 15rem;
   }
 
+  @include mixins.responsive(xxlg) {
+    padding: 8rem 20rem;
+  }
+
   &--img {
     width: 32rem;
 
@@ -71,6 +75,10 @@
       @include mixins.responsive(sm) {
         font-size: 1.5rem;
       }
+
+      @include mixins.responsive(xxlg) {
+        font-size: 3rem;
+      }
     }
 
     p {
@@ -83,6 +91,10 @@
 
       @include mixins.responsive(sm) {
         font-size: 0.9rem;
+      }
+
+      @include mixins.responsive(xxlg) {
+        font-size: 1rem;
       }
 
       a {

@@ -16,6 +16,10 @@
     padding: 8rem 6rem;
   }
 
+  @include mixins.responsive(xxlg) {
+    padding: 8rem 20rem;
+  }
+
   &-card {
     display: flex;
     justify-content: space-between;
@@ -59,6 +63,10 @@
         @include mixins.responsive(sm) {
           font-size: 1rem;
         }
+
+        @include mixins.responsive(xxlg) {
+          font-size: 1.2rem;
+        }
       }
 
       p {
@@ -69,6 +77,10 @@
 
         @include mixins.responsive(sm) {
           font-size: 0.9rem;
+        }
+
+        @include mixins.responsive(xxlg) {
+          font-size: 1rem;
         }
       }
     }
