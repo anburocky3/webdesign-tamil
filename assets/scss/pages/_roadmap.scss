@@ -17,6 +17,10 @@
     padding: 8rem 4rem;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 8rem 15rem;
+  }
+
   &--heading {
     text-align: center;
 

@@ -3,6 +3,7 @@
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
@@ -19,6 +20,11 @@
   @include mixins.responsive(lg) {
     padding: 8rem 6rem;
     flex-direction: row;
+  }
+
+  @include mixins.responsive(xlg) {
+    padding: 8rem 15rem;
+    justify-content: space-between;
   }
 
   img {
@@ -47,6 +53,10 @@
 
     @include mixins.responsive(lg) {
       font-size: 2rem;
+    }
+
+    @include mixins.responsive(xlg) {
+      font-size: 2.5rem;
     }
 
     & > span {

@@ -25,6 +25,10 @@
     padding: 1rem 6rem;
   }
 
+  @include mixins.responsive(xlg) {
+    padding: 1rem 15rem;
+  }
+
   h2 > span {
     @include mixins.responsive(xs) {
       // display: none;

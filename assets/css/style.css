@@ -129,6 +129,11 @@ a {
     padding: 1rem 6rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding: 1rem 15rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header h2 > span {
     font-size: 1rem;
@@ -189,6 +194,9 @@ a {
   color: #3f43fd;
 }
 
+.background-shapes {
+  flex-basis: 100%;
+}
 @media only screen and (max-width: 576px) {
   .background-shapes {
     display: none;
@@ -330,6 +338,12 @@ a {
 @media only screen and (min-width: 992px) {
   .background-shapes .heart2 {
     top: 60%;
+    right: 5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background-shapes .heart2 {
+    top: 55%;
     right: 5%;
   }
 }
@@ -1091,6 +1105,7 @@ footer .legal {
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -1110,6 +1125,12 @@ footer .legal {
   .hero-area {
     padding: 8rem 6rem;
     flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-area {
+    padding: 8rem 15rem;
+    justify-content: space-between;
   }
 }
 .hero-area img {
@@ -1140,6 +1161,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .hero-area--title {
     font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-area--title {
+    font-size: 2.5rem;
   }
 }
 .hero-area--title > span {
@@ -1197,6 +1223,11 @@ footer .legal {
     align-items: center;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .about-area {
+    padding: 8rem 15rem;
+  }
+}
 .about-area--img {
   width: 32rem;
 }
@@ -1208,6 +1239,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .about-area--img {
     width: 64rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about-area--img {
+    width: 100rem;
   }
 }
 .about-area--contents {
@@ -1273,6 +1309,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .roadmap {
     padding: 8rem 4rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .roadmap {
+    padding: 8rem 15rem;
   }
 }
 .roadmap--heading {
@@ -1460,6 +1501,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .courses {
     padding: 8rem 4rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .courses {
+    padding: 8rem 15rem;
   }
 }
 .courses--heading {

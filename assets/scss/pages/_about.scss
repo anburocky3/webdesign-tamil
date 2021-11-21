@@ -30,6 +30,10 @@
     align-items: center;
   }
 
+  @include mixins.responsive(xlg) {
+    padding: 8rem 15rem;
+  }
+
   &--img {
     width: 32rem;
 
@@ -39,6 +43,10 @@
 
     @include mixins.responsive(lg) {
       width: 64rem;
+    }
+
+    @include mixins.responsive(xlg) {
+      width: 100rem;
     }
   }
 

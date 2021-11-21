@@ -1,6 +1,8 @@
 @use "../abstract/mixins" as mixins;
 
 .background-shapes {
+  flex-basis: 100%;
+
   @include mixins.responsive(xs) {
     display: none;
   }
@@ -143,6 +145,11 @@
 
     @include mixins.responsive(lg) {
       top: 60%;
+      right: 5%;
+    }
+
+    @include mixins.responsive(xlg) {
+      top: 55%;
       right: 5%;
     }
   }
