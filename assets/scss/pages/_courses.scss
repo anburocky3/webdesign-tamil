@@ -13,6 +13,10 @@
     padding: 4rem 2rem;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 8rem 4rem;
+  }
+
   &--heading {
     text-align: center;
 
@@ -54,6 +58,11 @@
       flex-direction: column;
       align-items: center;
     }
+
+    @include mixins.responsive(lg) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &-card {
@@ -62,8 +71,16 @@
     border-radius: 10px;
     overflow: hidden;
 
+    @include mixins.responsive(lg) {
+      max-width: 280px;
+    }
+
     &--img {
       width: 380px;
+
+      @include mixins.responsive(lg) {
+        width: 280px;
+      }
     }
 
     &--body {
@@ -79,6 +96,10 @@
         @include mixins.responsive(sm) {
           font-size: 1.3rem;
         }
+
+        @include mixins.responsive(lg) {
+          font-size: 1rem;
+        }
       }
 
       p {
@@ -91,6 +112,10 @@
 
         @include mixins.responsive(sm) {
           font-size: 0.9rem;
+        }
+
+        @include mixins.responsive(lg) {
+          font-size: 0.8rem;
         }
       }
     }

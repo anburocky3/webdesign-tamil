@@ -125,6 +125,11 @@
     @include mixins.responsive(sm) {
       top: 40%;
     }
+
+    @include mixins.responsive(lg) {
+      top: 40%;
+      left: 5%;
+    }
   }
 
   .heart2 {
@@ -135,6 +140,11 @@
     z-index: -1;
     color: #f4284a;
     animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(lg) {
+      top: 60%;
+      right: 5%;
+    }
   }
 
   .circle1 {
@@ -168,6 +178,10 @@
 
     @include mixins.responsive(md) {
       top: 10%;
+    }
+
+    @include mixins.responsive(lg) {
+      top: 15%;
     }
   }
 }
