@@ -119,6 +119,11 @@ a {
     padding: 1rem 2rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header h2 > span {
     font-size: 1rem;
@@ -249,6 +254,11 @@ a {
     left: 80%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .background-shapes .dot2 {
+    top: 15%;
+  }
+}
 .background-shapes .dot3 {
   position: absolute;
   top: 90%;
@@ -324,6 +334,11 @@ a {
   z-index: -1;
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .circle2 {
+    top: 10%;
+  }
 }
 
 footer {
@@ -1401,11 +1416,21 @@ footer .legal {
     font-size: 1.3rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses-card--body h4 {
+    font-size: 1.3rem;
+  }
+}
 .courses-card--body p {
   color: gray;
   line-height: 1.5;
 }
 @media only screen and (max-width: 576px) {
+  .courses-card--body p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .courses-card--body p {
     font-size: 0.9rem;
   }

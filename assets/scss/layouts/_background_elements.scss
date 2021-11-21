@@ -81,6 +81,10 @@
       top: 22%;
       left: 80%;
     }
+
+    @include mixins.responsive(md) {
+      top: 15%;
+    }
   }
 
   .dot3 {
@@ -161,5 +165,9 @@
     z-index: -1;
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(md) {
+      top: 10%;
+    }
   }
 }
