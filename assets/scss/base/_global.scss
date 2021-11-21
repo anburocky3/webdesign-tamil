@@ -12,3 +12,11 @@
   transition: 500ms;
   animation: color-change 10s infinite;
 }
+
+.line {
+  width: 6rem;
+  height: 0.5rem;
+  border-radius: 6px;
+  margin: 30px auto;
+  background: linear-gradient(to right, #e24997, #2d2ed4);
+}

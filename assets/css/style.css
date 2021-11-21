@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
   padding: 0;
@@ -21,6 +22,14 @@ a {
 .color-anim {
   transition: 500ms;
   animation: color-change 10s infinite;
+}
+
+.line {
+  width: 6rem;
+  height: 0.5rem;
+  border-radius: 6px;
+  margin: 30px auto;
+  background: linear-gradient(to right, #e24997, #2d2ed4);
 }
 
 .btn, .btn-primary-outlined, .btn-primary {
@@ -229,6 +238,14 @@ a {
   }
 }
 @keyframes box-shape {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-infinite {
   0% {
     transform: rotate(0deg);
   }
@@ -922,6 +939,106 @@ a {
 }
 .about-area--contents p a:hover {
   text-shadow: 10px 20px 30px black;
+}
+
+.roadmap {
+  padding: 8rem 20rem;
+}
+.roadmap--heading {
+  text-align: center;
+}
+.roadmap--heading h5 {
+  font-size: 2rem;
+}
+.roadmap--heading p {
+  color: gray;
+}
+.roadmap--items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.roadmap--item {
+  transition: 500ms;
+  position: relative;
+  padding: 3rem 1rem;
+  text-align: center;
+  max-width: 350px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  margin-left: 3rem;
+}
+.roadmap--item:hover .roadmap--item__img::after {
+  animation: rotate-infinite 4000ms linear infinite;
+}
+.roadmap--item__img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px;
+}
+.roadmap--item__img img {
+  width: 60px;
+  margin-top: 25px;
+}
+.roadmap--item__img::after {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 5px dotted #3f43fd;
+  border-radius: 50%;
+}
+.roadmap--item__contents {
+  margin-top: 2rem;
+}
+.roadmap--item__contents h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.roadmap--item__contents p {
+  color: gray;
+  line-height: 1.5;
+}
+.roadmap--item:not(:last-child)::before {
+  transition: 500ms;
+  position: absolute;
+  top: 35%;
+  right: -30%;
+  content: "\f054";
+  width: 70px;
+  height: 70px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 3rem;
+  z-index: 1;
+  line-height: 1;
+  color: #020702;
+}
+.roadmap--item:hover:not(:last-child)::before {
+  color: #3f43fd;
+  right: -32%;
+}
+.roadmap--item:hover:last-child::after {
+  position: absolute;
+  top: 35%;
+  right: -30%;
+  content: "😊👍";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 3rem;
+  z-index: 1;
+  line-height: 1;
+  color: #3f43fd;
+}
+.roadmap--item:hover h5 {
+  color: #3f43fd;
+}
+.roadmap--item:hover {
+  filter: grayscale(0);
 }
 
 /*# sourceMappingURL=style.css.map */
