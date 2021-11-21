@@ -250,6 +250,34 @@ a {
   animation: box-shape linear 5s infinite;
 }
 
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #3f43fd;
+  color: #fff;
+}
+footer p {
+  color: #e8e8e8;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  text-shadow: 2px 2px 10px #000;
+}
+footer .social-icons > a > i {
+  transition: 500ms;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  color: #1619a0;
+}
+footer .social-icons > a > i:hover {
+  color: #e0e0e0;
+}
+footer .legal {
+  font-size: 0.9rem;
+}
+
 @keyframes color-change {
   0% {
     color: red;

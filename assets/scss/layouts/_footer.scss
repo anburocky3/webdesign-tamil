@@ -1,0 +1,35 @@
+@use "../abstract/functions" as func;
+
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: func.theme-colors();
+  color: #fff;
+
+  p {
+    color: #e8e8e8;
+  }
+
+  a {
+    color: #fff;
+
+    &:hover {
+      text-shadow: 2px 2px 10px #000;
+    }
+  }
+
+  .social-icons > a > i {
+    transition: 500ms;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    color: #1619a0;
+
+    &:hover {
+      color: rgb(224, 224, 224);
+    }
+  }
+
+  .legal {
+    font-size: 0.9rem;
+  }
+}
