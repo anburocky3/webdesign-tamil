@@ -1,5 +1,6 @@
 @use "../abstract/variable" as var;
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
 
 .header {
   padding: 1rem 20rem;
@@ -8,11 +9,35 @@
   align-items: center;
   border-bottom: 1px solid #eee;
 
+  @include mixins.responsive(xs) {
+    padding: 1rem 2rem;
+  }
+
+  h2 > span {
+    @include mixins.responsive(xs) {
+      // display: none;
+      font-size: 1rem;
+    }
+  }
+
+  .nav-toggler {
+    display: none;
+
+    @include mixins.responsive(xs) {
+      display: block;
+      font-size: 1.3rem;
+    }
+  }
+
   &--menu {
     display: flex;
     align-items: center;
     list-style: none;
     text-transform: uppercase;
+
+    @include mixins.responsive(xs) {
+      display: none;
+    }
 
     &__item > a {
       margin-right: 1.5rem;

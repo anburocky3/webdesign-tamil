@@ -1,8 +1,13 @@
 @use "../abstract/variable" as var;
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
 
 .roadmap {
   padding: 8rem 20rem;
+
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+  }
 
   &--heading {
     text-align: center;
@@ -21,6 +26,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+
+    @include mixins.responsive(xs) {
+      flex-direction: column;
+    }
   }
 
   &--item {
@@ -88,6 +97,12 @@
       z-index: 1;
       line-height: 1;
       color: #020702;
+
+      @include mixins.responsive(xs) {
+        content: "\f107";
+        top: 90%;
+        left: 35%;
+      }
     }
 
     &:hover:not(:last-child)::before {
@@ -101,11 +116,16 @@
       right: -30%;
       content: "😊👍";
       font-family: "Font Awesome 5 Free";
-      font-weight: 600;
+      font-weight: 400;
       font-size: 3rem;
       z-index: 1;
       line-height: 1;
       color: func.theme-colors();
+
+      @include mixins.responsive(xs) {
+        top: 90%;
+        left: -20%;
+      }
     }
 
     &:hover h5 {

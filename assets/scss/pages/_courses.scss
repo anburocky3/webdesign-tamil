@@ -1,8 +1,13 @@
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
 
 .courses {
   padding: 8rem 20rem;
   background-color: func.theme-colors();
+
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+  }
 
   &--heading {
     text-align: center;
@@ -10,16 +15,28 @@
     h2 {
       font-size: 2rem;
       color: #fff;
+
+      @include mixins.responsive(xs) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
       color: rgb(223, 223, 223);
+
+      @include mixins.responsive(xs) {
+        font-size: 0.9rem;
+      }
     }
   }
 
   &-cards {
     display: flex;
     justify-content: space-between;
+
+    @include mixins.responsive(xs) {
+      flex-direction: column;
+    }
   }
 
   &-card {
@@ -37,11 +54,19 @@
 
       h4 {
         font-size: 1.5rem;
+
+        @include mixins.responsive(xs) {
+          font-size: 1.3rem;
+        }
       }
 
       p {
         color: gray;
         line-height: 1.5;
+
+        @include mixins.responsive(xs) {
+          font-size: 0.9rem;
+        }
       }
     }
 

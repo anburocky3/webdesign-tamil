@@ -1,8 +1,15 @@
+@use "../abstract/mixins" as mixins;
+
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
 
   &--contents {
     max-width: 34rem;
@@ -11,6 +18,14 @@
   &--title {
     font-size: 3rem;
     font-weight: 600;
+
+    @include mixins.responsive(xs) {
+      font-size: 2rem;
+    }
+
+    & > span {
+      font-size: 1.5rem;
+    }
   }
 
   &--desc {
@@ -18,5 +33,9 @@
     font-size: 1.2rem;
     line-height: 1.8;
     color: gray;
+
+    @include mixins.responsive(xs) {
+      font-size: 0.9rem;
+    }
   }
 }
