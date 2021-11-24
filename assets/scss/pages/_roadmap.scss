@@ -17,12 +17,12 @@
     padding: 8rem 4rem;
   }
 
-  @include mixins.responsive(lg) {
-    padding: 8rem 15rem;
+  @include mixins.responsive(xlg) {
+    padding: 8rem 4rem;
   }
 
   @include mixins.responsive(xxlg) {
-    padding: 8rem 20rem;
+    padding: 8rem 10rem;
   }
 
   &--heading {

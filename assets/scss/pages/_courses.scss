@@ -18,11 +18,11 @@
   }
 
   @include mixins.responsive(xlg) {
-    padding: 8rem 15rem;
+    padding: 8rem 4rem;
   }
 
   @include mixins.responsive(xxlg) {
-    padding: 8rem 20rem;
+    padding: 8rem 10rem;
   }
 
   &--heading {
@@ -92,7 +92,7 @@
     }
 
     @include mixins.responsive(xxlg) {
-      max-width: 380px;
+      max-width: 350px;
     }
 
     &--img {
@@ -103,7 +103,7 @@
       }
 
       @include mixins.responsive(xxlg) {
-        width: 380px;
+        width: 350px;
       }
     }
 

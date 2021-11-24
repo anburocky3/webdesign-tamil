@@ -1368,14 +1368,14 @@ footer .legal {
     padding: 8rem 4rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .roadmap {
-    padding: 8rem 15rem;
+    padding: 8rem 4rem;
   }
 }
 @media only screen and (min-width: 1400px) {
   .roadmap {
-    padding: 8rem 20rem;
+    padding: 8rem 10rem;
   }
 }
 .roadmap--heading {
@@ -1584,12 +1584,12 @@ footer .legal {
 }
 @media only screen and (min-width: 1200px) {
   .courses {
-    padding: 8rem 15rem;
+    padding: 8rem 4rem;
   }
 }
 @media only screen and (min-width: 1400px) {
   .courses {
-    padding: 8rem 20rem;
+    padding: 8rem 10rem;
   }
 }
 .courses--heading {
@@ -1666,7 +1666,7 @@ footer .legal {
 }
 @media only screen and (min-width: 1400px) {
   .courses-card {
-    max-width: 380px;
+    max-width: 350px;
   }
 }
 .courses-card--img {
@@ -1679,7 +1679,7 @@ footer .legal {
 }
 @media only screen and (min-width: 1400px) {
   .courses-card--img {
-    width: 380px;
+    width: 350px;
   }
 }
 .courses-card--body {
