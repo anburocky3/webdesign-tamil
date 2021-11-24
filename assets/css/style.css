@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  scroll-margin-top: 50px;
 }
 
 a {
@@ -224,6 +225,16 @@ a {
 }
 .header--menu__item > a.active {
   color: #3f43fd;
+}
+.header.navbar-fixed {
+  position: fixed;
+  top: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px 0 #e6e6e6;
+  z-index: 999;
 }
 
 @media only screen and (max-width: 576px) {

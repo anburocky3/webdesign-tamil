@@ -119,4 +119,15 @@
       }
     }
   }
+
+  &.navbar-fixed {
+    position: fixed;
+    top: -1px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 0 #e6e6e6;
+    z-index: 999;
+  }
 }
