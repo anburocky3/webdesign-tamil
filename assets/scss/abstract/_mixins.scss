@@ -1,3 +1,4 @@
+@use "./functions" as func;
 // // X-Small devices (portrait phones, less than 576px)
 // // No media query for `xs` since this is the default in Bootstrap
 // @media (max-width: 576px) {
@@ -23,7 +24,7 @@
 // @media (min-width: 1400px) {
 // }
 
-@mixin responsive($breakpoint) {
+@mixin responsive($breakpoint, $scope: "") {
   @if $breakpoint == xs {
     // X-Small devices (portrait phones, less than 576px) (xs)
 
@@ -32,8 +33,15 @@
     }
   } @else if $breakpoint == sm {
     // Small devices (landscape phones, 576px and up)
-    @media only screen and (min-width: 576px) {
-      @content;
+
+    @if $scope == "sm-md" {
+      @media only screen and (min-width: 576px) and (max-width: 768px) {
+        @content;
+      }
+    } @else {
+      @media only screen and (min-width: 576px) {
+        @content;
+      }
     }
   } @else if $breakpoint == md {
     // Medium devices (tablets, 768px and up)
@@ -54,6 +62,35 @@
     // XX-Large devices (larger desktops, 1400px and up)
     @media only screen and (min-width: 1400px) {
       @content;
+    }
+  }
+}
+
+@mixin mobile-menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: func.theme-colors("menu-bg");
+  z-index: 1;
+  transition: 500ms;
+
+  &.show {
+    display: block;
+    text-align: center;
+    top: 64px;
+  }
+
+  & li {
+    padding: 2rem;
+
+    a {
+      color: #fff;
+
+      &.active {
+        color: #000;
+      }
     }
   }
 }

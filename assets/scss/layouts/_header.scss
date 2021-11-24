@@ -67,36 +67,13 @@
     @include mixins.responsive(xs) {
       display: none;
 
-      position: fixed;
-      top: -100%;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: func.theme-colors("menu-bg");
-      z-index: 1;
-      transition: 500ms;
-
-      &.show {
-        display: block;
-        text-align: center;
-        top: 64px;
-      }
-
-      & li {
-        padding: 2rem;
-
-        a {
-          color: #fff;
-
-          &.active {
-            color: #000;
-          }
-        }
-      }
+      @include mixins.mobile-menu;
     }
 
-    @include mixins.responsive(sm) {
+    @include mixins.responsive(sm, "sm-md") {
       display: none;
+
+      @include mixins.mobile-menu;
     }
 
     @include mixins.responsive(lg) {

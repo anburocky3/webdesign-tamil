@@ -203,9 +203,31 @@ a {
     color: #000;
   }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .header--menu {
     display: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0080ff;
+    z-index: 1;
+    transition: 500ms;
+  }
+  .header--menu.show {
+    display: block;
+    text-align: center;
+    top: 64px;
+  }
+  .header--menu li {
+    padding: 2rem;
+  }
+  .header--menu li a {
+    color: #fff;
+  }
+  .header--menu li a.active {
+    color: #000;
   }
 }
 @media only screen and (min-width: 992px) {
